@@ -25,4 +25,18 @@ tutorialdjango/urls.py
 
 make main/templates/main/index.html
 
+python manage.py makemigrations
+: db를 만들 수 있는 파일
+
+python manage.py migrate
+: 반영되게
+
+admin.py
+* from .models import Cafe
+* admin.site.register(Cafe)
+
+python manage.py createsuperuser
+
+1234!
+
 
