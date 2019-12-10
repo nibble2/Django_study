@@ -14,4 +14,15 @@ python manage.py migrate
 
 python manage.py runserver 0:80
 
-.
+python manage.py startapp main
+
+tutorialdjango/settings.py 
+ * INSTALLED_APPS = [ 'main' ]
+ 
+tutorialdjango/urls.py
+* from main.views import index
+* path('', index)
+
+make main/templates/main/index.html
+
+
